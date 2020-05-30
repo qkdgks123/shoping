@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+    body {
+        height: 100%;
+        background-color: #F3F1E9;
+    }
+    label {
+        display: inline-block;/* display:블럭/인라인 요소출력, inline-block:인라인요소이면서 폭과높이를 가짐. */
+        width: 120px;
+    }
+    input {
+        display: inline-block;
+        width: 160px;
+    }
+</style>
+</head>
+
+<body>
+    <div id="page-wrap">
+        <form method="get" action="http://localhost:8080/ch07/process.jsp">
+            <fieldset>
+                <legend>비밀번호분실</legend>
+
+                <label for="name">이름</label>
+                <input type="text" name="name" /><br />
+                <label for="tel">휴대폰 번호</label>
+                <input type="tel" name="tel" />
+                <br />
+                <label for="email">이메일</label>
+                <input type="email" name="email" />
+                <br />
+                <label for="dob">생일</label>
+                <input type="date" name="dob" />
+                <br />
+            </fieldset>
+            <input type="submit" name="submit" value="제출" />
+            <input type="reset" name="reset" value="초기화" />
+
+        </form>
+    </div>
+</body>
+</html>
